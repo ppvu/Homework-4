@@ -1,6 +1,6 @@
 # MyWeatherApp
 
-## iOS Weather Application (Homework #4)
+## iOS Weather Application (PM Homework #4)
 
 ### What's in:
 
@@ -13,4 +13,4 @@
 
 Main View                  |  Detailed View
 :-------------------------:|:-------------------------------:
-![](WeatherApp/Screenshots/MainScreen.png)|  ![](WeatherApp/Screenshots/SecondDetailedView.jpg)
+![](WeatherApp/Screenshots/MainScreen.png)|  ![](WeatherApp/Screenshots/SecondDetailedView.png)
