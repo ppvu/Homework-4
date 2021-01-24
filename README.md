@@ -11,6 +11,6 @@
 
 ### Screenshots of App:
 
-Main View                  |  Detailed View
+Main View                  |  Second Screen View
 :-------------------------:|:-------------------------------:
 ![](WeatherApp/Screenshots/MainScreen.png)|  ![](WeatherApp/Screenshots/SecondDetailedView.png)
