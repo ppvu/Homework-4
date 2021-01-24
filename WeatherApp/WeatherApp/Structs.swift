@@ -29,7 +29,6 @@ struct Coordinates: Codable {
     }
 }
 
-
 struct CurrentWeather: Codable {
     
     let weather: [Weather]
