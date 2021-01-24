@@ -9,7 +9,6 @@ import Foundation
 
 class NetworkService {
     
-    
     let urlApiKey = "5f3b95f9256ec76f44d734d702f99850"
     let urlBase = "https://api.openweathermap.org/data/2.5/"
     
@@ -20,9 +19,7 @@ class NetworkService {
     }
     
     func buildURL(city: String) -> String {
-        
         return urlBase + "weather" + "?q=" + city + "&units=metric" + "&appid=" + urlApiKey
-        
     }
     
     func getWeatherByCoords(lat: Double, lon: Double, onSuccess: @escaping (Forecast) -> Void, onError: @escaping (String) -> Void) {
@@ -42,7 +39,7 @@ class NetworkService {
                     onError("Invalid data or response")
                     return
                 }
-
+                
                 do {
                     print(String(data: data, encoding: .utf8) ?? "")
                     if response.statusCode == 200 {
@@ -56,51 +53,34 @@ class NetworkService {
                     onError(error.localizedDescription)
                 }
             }
-
+            
         }
         task.resume()
     }
     
-//
-//     Тут убери Dispatch Group, у тебя один вызов, достаточно просто через замыкание.
-//     Не сильно понял зачем тебе вообще эта функция.
-//    func getWeatherLatLon(lat: Double, lon: Double, onSuccess: @escaping ([CurrentWeather]) -> Void) {
-//        let dispatchGroup = DispatchGroup()
-//        var results = [CurrentWeather]()
-//        dispatchGroup.enter()
-//        getWeatherByCoords(lat: lat, lon: lon, onSuccess: { result in
-//            dispatchGroup.leave()
-//            results.append(result)
-//        }, onError: { _ in
-//            dispatchGroup.leave()
-//        })
-//        dispatchGroup.notify(queue: .main, execute: {onSuccess(results)})
-//
-//    }
-    
     // Get weather by city name.
     func getWeatherByCityName(city: String,
-                    onSuccess: @escaping (CurrentWeather) -> Void,
-                    onError: @escaping (String) -> Void) {
-
+                              onSuccess: @escaping (CurrentWeather) -> Void,
+                              onError: @escaping (String) -> Void) {
+        
         guard let url = URL(string: buildURL(city: city)) else {
             onError("Error building URL")
             return
         }
-
+        
         let task = session.dataTask(with: url) { (data, response, error) in
-
+            
             DispatchQueue.main.async {
                 if let error = error {
                     onError(error.localizedDescription)
                     return
                 }
-        
+                
                 guard let data = data, let response = response as? HTTPURLResponse else {
                     onError("Invalid data or response")
                     return
                 }
-
+                
                 do {
                     if response.statusCode == 200 {
                         let items = try JSONDecoder().decode(CurrentWeather.self, from: data)
@@ -112,17 +92,14 @@ class NetworkService {
                     onError(error.localizedDescription)
                 }
             }
-
         }
         task.resume()
     }
-
+    
     func getWeatherForAllCities(cities: [String], handler: @escaping ([CurrentWeather]) -> Void) {
         
         let dispatchGroup = DispatchGroup()
         var currentWeathers = [CurrentWeather]()
-        
-        // Если хочешь можешь потом сделать так что бы ОнСаксесс была функция которая принимает и массив куррент везер и массив ошибок. И будешь хендлить в контроллере, мол, вот города, но еще были такие вот ошибки.
         
         var errors = [String]()
         

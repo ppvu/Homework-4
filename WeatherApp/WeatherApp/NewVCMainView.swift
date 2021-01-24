@@ -9,8 +9,6 @@ import UIKit
 
 class SecondViewControllerMainView: UIView {
     
-    
-    
     lazy var cityNameLabel: UILabel = {
         let label = UILabel()
         label.text = "---"
@@ -52,13 +50,11 @@ class SecondViewControllerMainView: UIView {
     
     private func setLayoutConstraints() {
         NSLayoutConstraint.activate([
-            temperatureLabel.centerYAnchor.constraint(equalTo: centerYAnchor, constant: 0),
+            temperatureLabel.centerYAnchor.constraint(equalTo: centerYAnchor, constant: 50),
             temperatureLabel.centerXAnchor.constraint(equalTo: centerXAnchor, constant: 0),
             
             cityNameLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
             cityNameLabel.bottomAnchor.constraint(equalTo: temperatureLabel.topAnchor, constant: 0),
-            
-            
         ])
     }
 }

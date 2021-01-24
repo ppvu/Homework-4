@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FE23A7FD25BC48760038FBBE /* SecondViewControllerMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE23A7FC25BC48760038FBBE /* SecondViewControllerMainView.swift */; };
-		FE23A80125BD9C9D0038FBBE /* ForecastCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE23A80025BD9C9D0038FBBE /* ForecastCustomCell.swift */; };
+		FE23A7FD25BC48760038FBBE /* NewVCMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE23A7FC25BC48760038FBBE /* NewVCMainView.swift */; };
+		FE23A80C25BDC0590038FBBE /* IconMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE23A80B25BDC0590038FBBE /* IconMap.swift */; };
 		FE4DF30425B70ABE008C59A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4DF30325B70ABE008C59A1 /* AppDelegate.swift */; };
 		FE4DF30625B70ABE008C59A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4DF30525B70ABE008C59A1 /* SceneDelegate.swift */; };
 		FE4DF30825B70ABE008C59A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4DF30725B70ABE008C59A1 /* ViewController.swift */; };
@@ -17,13 +17,13 @@
 		FE4DF31A25B70AEF008C59A1 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4DF31925B70AEF008C59A1 /* Structs.swift */; };
 		FE4DF31F25B71F06008C59A1 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4DF31E25B71F06008C59A1 /* NetworkService.swift */; };
 		FE4DF32325B71FCC008C59A1 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4DF32225B71FCC008C59A1 /* Global.swift */; };
-		FE4DF32725B87598008C59A1 /* CustomCViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4DF32625B87598008C59A1 /* CustomCViewCell.swift */; };
+		FE4DF32725B87598008C59A1 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4DF32625B87598008C59A1 /* CustomCell.swift */; };
 		FE4DF32A25B881D2008C59A1 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4DF32925B881D2008C59A1 /* NewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FE23A7FC25BC48760038FBBE /* SecondViewControllerMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewControllerMainView.swift; sourceTree = "<group>"; };
-		FE23A80025BD9C9D0038FBBE /* ForecastCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastCustomCell.swift; sourceTree = "<group>"; };
+		FE23A7FC25BC48760038FBBE /* NewVCMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewVCMainView.swift; sourceTree = "<group>"; };
+		FE23A80B25BDC0590038FBBE /* IconMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconMap.swift; sourceTree = "<group>"; };
 		FE4DF30025B70ABE008C59A1 /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE4DF30325B70ABE008C59A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE4DF30525B70ABE008C59A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,7 +34,7 @@
 		FE4DF31925B70AEF008C59A1 /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
 		FE4DF31E25B71F06008C59A1 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		FE4DF32225B71FCC008C59A1 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
-		FE4DF32625B87598008C59A1 /* CustomCViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCViewCell.swift; sourceTree = "<group>"; };
+		FE4DF32625B87598008C59A1 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		FE4DF32925B881D2008C59A1 /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,9 +74,9 @@
 				FE4DF30525B70ABE008C59A1 /* SceneDelegate.swift */,
 				FE4DF30725B70ABE008C59A1 /* ViewController.swift */,
 				FE4DF32925B881D2008C59A1 /* NewViewController.swift */,
-				FE23A80025BD9C9D0038FBBE /* ForecastCustomCell.swift */,
-				FE23A7FC25BC48760038FBBE /* SecondViewControllerMainView.swift */,
-				FE4DF32625B87598008C59A1 /* CustomCViewCell.swift */,
+				FE23A7FC25BC48760038FBBE /* NewVCMainView.swift */,
+				FE23A80B25BDC0590038FBBE /* IconMap.swift */,
+				FE4DF32625B87598008C59A1 /* CustomCell.swift */,
 				FE4DF30C25B70AC2008C59A1 /* Assets.xcassets */,
 				FE4DF30E25B70AC2008C59A1 /* LaunchScreen.storyboard */,
 				FE4DF31125B70AC2008C59A1 /* Info.plist */,
@@ -171,15 +171,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE4DF31F25B71F06008C59A1 /* NetworkService.swift in Sources */,
-				FE23A80125BD9C9D0038FBBE /* ForecastCustomCell.swift in Sources */,
 				FE4DF31A25B70AEF008C59A1 /* Structs.swift in Sources */,
+				FE23A80C25BDC0590038FBBE /* IconMap.swift in Sources */,
 				FE4DF32325B71FCC008C59A1 /* Global.swift in Sources */,
 				FE4DF32A25B881D2008C59A1 /* NewViewController.swift in Sources */,
 				FE4DF30825B70ABE008C59A1 /* ViewController.swift in Sources */,
 				FE4DF30425B70ABE008C59A1 /* AppDelegate.swift in Sources */,
 				FE4DF30625B70ABE008C59A1 /* SceneDelegate.swift in Sources */,
-				FE23A7FD25BC48760038FBBE /* SecondViewControllerMainView.swift in Sources */,
-				FE4DF32725B87598008C59A1 /* CustomCViewCell.swift in Sources */,
+				FE23A7FD25BC48760038FBBE /* NewVCMainView.swift in Sources */,
+				FE4DF32725B87598008C59A1 /* CustomCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
